@@ -51,5 +51,32 @@ body {
 }
 [class*="__container"] {
     max-width: 1057px;
-    margin: 0px auto;
+    margin: 1px auto;
 }
+
+.header {
+
+}
+.header__container{
+    display: flex;
+}
+.header__button{
+    display: flex;
+    flex: 0 0 252px;
+    justify-content: flex-end;
+}
+.header__logo{
+
+}
+.header__menu{
+    flex: 1 1 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+.menu__list{}
+.menu__item {}
+.menu__link {}
+
