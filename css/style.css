@@ -50,20 +50,51 @@ body {
     flex: 1 1 auto;
 }
 [class*="__container"] {
-    max-width: 1057px;
+    max-width: 1087px;
     margin: 1px auto;
+    padding: 0px 15px;
+}
+/* Personal computer */
+@media (max-width: 1087px){
+    [class*="__container"] {
+        max-width: 970px;
+    }
+}
+/* tablet */
+@media (max-width: 992px) {
+    [class*="__container"] {
+        max-width: none;
+    }
 }
 
+/* mobile */
+@media (max-width: 767px) {
+    [class*="__container"] {
+        max-width: 750px;
+    }
+}
 .header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
 
 }
 .header__container{
     display: flex;
+    min-height: 114px;
+    align-items: center;
 }
 .header__button{
     display: flex;
     flex: 0 0 252px;
     justify-content: flex-end;
+}
+@media (max-width: 991.98px) {
+    .header__button {
+        flex: 0 0 170px;
+    }
 }
 .header__logo{
 
@@ -76,7 +107,58 @@ body {
     display: flex;
     justify-content: flex-end;
 }
-.menu__list{}
-.menu__item {}
-.menu__link {}
+.menu__list{
+    display: flex;
+}
 
+.menu__item {
+    margin: 0px 40px 0px 0px;
+}
+
+.menu__link {
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 1.2;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 991.98px) {
+    .header__container{
+        min-height: 80px;
+
+    }
+    .header__button {
+        flex: 0 0 170px;
+    }
+    .menu__item {
+        margin: 0px 30px 0px 0px;
+    }
+}
+.button {
+    display: inline-block;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    color: #FCFDFE;
+    padding: 14px 30px;
+    border-radius: 5px;
+    background-color: #ec5863;
+    transition: background-color 0.3s ease 0s;
+}
+.button:hover {
+    background-color: #f37075;
+}
+
+.button-blue{
+    background-color: #4285F4;
+}
+.button-blue:hover {
+    background-color: #7095ec;
+}
