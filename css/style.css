@@ -600,3 +600,18 @@ body {
     transform: rotate(30deg);
     border-radius: 16px;
 }
+
+/*------------------------------------------*/
+
+.footer{
+    padding: 45px 0;
+}
+.footer__container{
+}
+.footer__items{
+    display: flex;
+    gap: 57px;
+    justify-content: center;
+    align-items: center;
+}
+.footer__item{}
